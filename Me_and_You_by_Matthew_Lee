@@ -5,22 +5,7 @@
 
 import random
 
-traits = ["only speak when spoken to", "never know how to introduce
-myself", "hide in the middle of a group", "lead in the front", "make
-my opinions known", "do all of my homework", "have a plan", "know
-what will work and won't", "believe in true love", "get caught in
-the past", "know the future will be better", "want to please", "set
-goals", "smile at strangers", "watch my feet when walking", "look
-for things to do", "let things unfold", "climb trees", "keep my feet
-on the ground", "walk fast", "drive slow", "read the newspaper",
-"watch cartoons", "eat breakfast", "believe in the midnight snack",
-"snore", "yawn loudly", "love vegetables", "eat gluten-free", "get
-cold easily", "need a hug", "get lost in eyes", "hate my
-reflection", "sing in the shower", "give others the benefit of the
-doubt", "double-check the lock on the door", "watch the sunrise",
-"floss", "hide my scars", "listen to Chopin", "keep a diary",
-"scrapbook", "knit", "sweat a lot", "wash your hands before eating",
-"pray"]
+traits = ["only speak when spoken to", "never know how to introduce myself", "hide in the middle of a group", "lead in the front", "make my opinions known", "do all of my homework", "have a plan", "know what will work and won't", "believe in true love", "get caught in the past", "know the future will be better", "want to please", "set goals", "smile at strangers", "watch my feet when walking", "look for things to do", "let things unfold", "climb trees", "keep my feet on the ground", "walk fast", "drive slow", "read the newspaper", "watch cartoons", "eat breakfast", "believe in the midnight snack", "snore", "yawn loudly", "love vegetables", "eat gluten-free", "get cold easily", "need a hug", "get lost in eyes", "hate my reflection", "sing in the shower", "give others the benefit of the doubt", "double-check the lock on the door", "watch the sunrise", "floss", "hide my scars", "listen to Chopin", "keep a diary", "scrapbook", "knit", "sweat a lot", "wash your hands before eating", "pray"]
 
 def Me():
   my_trait = traits[random.randint(0, len(traits)-1)]
