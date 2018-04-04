@@ -1,7 +1,7 @@
-// Me and You
-// by Matthew Lee
-// Submitted to the 2014 Stanford University Code Poetry Slam
-// Source: http://www.melissakagen.com/CPS1.1.2.pdf
+# Me and You
+# by Matthew Lee
+# Submitted to the 2014 Stanford University Code Poetry Slam
+# Source: http://www.melissakagen.com/CPS1.1.2.pdf
 
 import random
 
@@ -9,23 +9,23 @@ traits = ["only speak when spoken to", "never know how to introduce myself", "hi
 
 def Me():
   my_trait = traits[random.randint(0, len(traits)-1)]
-  print "I " + my_trait + "."
+  print ("I " + my_trait + ".")
   return my_trait
 
 def You():
   your_trait = traits[random.randint(0, len(traits)-1)]
   your_trait = your_trait.replace("my", "your")
   your_trait = your_trait.replace("am", "are")
-  print "You " + your_trait + "."
+  print ("You " + your_trait + ".")
   return your_trait
 
 def WillItWork(me, you):
-  print "Will it work?"
+  print ("Will it work?")
   willitwork = random.choice(["Yes", "No"])
-  print willitwork + "."
+  print (willitwork + ".")
   if willitwork == "No":
-       print "Will it be okay?"
-       print random.choice(["Yes", "No"]) + "."
+       print ("Will it be okay?")
+       print (random.choice(["Yes", "No"]) + ".")
 
 me = Me()
 you = You()
