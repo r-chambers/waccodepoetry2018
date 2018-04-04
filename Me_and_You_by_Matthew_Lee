@@ -1,0 +1,48 @@
+// Me and You
+// by Matthew Lee
+// Submitted to the 2014 Stanford University Code Poetry Slam
+// Source: http://www.melissakagen.com/CPS1.1.2.pdf
+
+import random
+
+traits = ["only speak when spoken to", "never know how to introduce
+myself", "hide in the middle of a group", "lead in the front", "make
+my opinions known", "do all of my homework", "have a plan", "know
+what will work and won't", "believe in true love", "get caught in
+the past", "know the future will be better", "want to please", "set
+goals", "smile at strangers", "watch my feet when walking", "look
+for things to do", "let things unfold", "climb trees", "keep my feet
+on the ground", "walk fast", "drive slow", "read the newspaper",
+"watch cartoons", "eat breakfast", "believe in the midnight snack",
+"snore", "yawn loudly", "love vegetables", "eat gluten-free", "get
+cold easily", "need a hug", "get lost in eyes", "hate my
+reflection", "sing in the shower", "give others the benefit of the
+doubt", "double-check the lock on the door", "watch the sunrise",
+"floss", "hide my scars", "listen to Chopin", "keep a diary",
+"scrapbook", "knit", "sweat a lot", "wash your hands before eating",
+"pray"]
+
+def Me():
+  my_trait = traits[random.randint(0, len(traits)-1)]
+  print "I " + my_trait + "."
+  return my_trait
+
+def You():
+  your_trait = traits[random.randint(0, len(traits)-1)]
+  your_trait = your_trait.replace("my", "your")
+  your_trait = your_trait.replace("am", "are")
+  print "You " + your_trait + "."
+  return your_trait
+
+def WillItWork(me, you):
+  print "Will it work?"
+  willitwork = random.choice(["Yes", "No"])
+  print willitwork + "."
+  if willitwork == "No":
+       print "Will it be okay?"
+       print random.choice(["Yes", "No"]) + "."
+
+me = Me()
+you = You()
+
+WillItWork(me, you)
